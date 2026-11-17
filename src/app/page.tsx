@@ -24,7 +24,7 @@ const fadeUp = {
   }),
 };
 
-const VENUE = "KV Conventions, Sanganakal Road, Ballari";
+const VENUE = "Virbhai Bhavan, Rajajinagar Industrial Area, Bengaluru";
 
 function googleCalendarUrl({
   name,
@@ -39,13 +39,13 @@ function googleCalendarUrl({
 }) {
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: `${name} - Dinesh & Monisha Wedding`,
+    text: `${name} - Jayashree & Gopi Wedding`,
     dates: `${start}/${end}`,
     ctz: "Asia/Kolkata",
     location: VENUE,
     details: detail
-      ? `${detail}. Wedding celebration of Dinesh and Monisha.`
-      : "Wedding celebration of Dinesh and Monisha.",
+      ? `${detail}. Wedding celebration of Jayashree and Gopi.`
+      : "Wedding celebration of Jayashree and Gopi.",
   });
 
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
@@ -54,9 +54,9 @@ function googleCalendarUrl({
 const events = [
   {
     name: "Varapooja",
-    date: "23rd June 2026",
-    day: "Tuesday",
-    time: "4:30 PM",
+    date: "2nd December 2026",
+    day: "Wednesday",
+    time: "2:00 PM",
     calendarUrl: googleCalendarUrl({
       name: "Varapooja",
       start: "20260623T163000",
@@ -65,8 +65,8 @@ const events = [
   },
   {
     name: "Reception",
-    date: "23rd June 2026",
-    day: "Tuesday",
+    date: "2nd December 2026",
+    day: "Wednesday",
     time: "7:00 PM",
     calendarUrl: googleCalendarUrl({
       name: "Reception",
@@ -76,28 +76,28 @@ const events = [
   },
   {
     name: "Upanayana",
-    date: "24th June 2026",
-    day: "Wednesday",
-    time: "6:15 AM – 7:20 AM",
-    detail: "Mithuna Lagna",
+    date: "3rd December 2026",
+    day: "Thursday",
+    time: "8:00 AM – 8:30 AM",
+  
     calendarUrl: googleCalendarUrl({
       name: "Upanayana",
       start: "20260624T061500",
       end: "20260624T072000",
-      detail: "Mithuna Lagna",
+      
     }),
   },
   {
     name: "Muhurtha",
-    date: "24th June 2026",
-    day: "Wednesday",
-    time: "9:15 AM – 9:45 AM",
-    detail: "Karkataka Lagna",
+    date: "3rd December 2026",
+    day: "Thursday",
+    time: "11:55 AM – 12:30 PM",
+    detail: "Kumba Lagna",
     calendarUrl: googleCalendarUrl({
       name: "Muhurtha",
       start: "20260624T091500",
       end: "20260624T094500",
-      detail: "Karkataka Lagna",
+      detail: "Kumba Lagna",
     }),
   },
 ];
@@ -152,7 +152,7 @@ export default function Home() {
               fontSize: "clamp(2.75rem, 15vw, 5.5rem)",
             }}
           >
-            Dinesh
+            Jayashree
           </motion.h1>
 
           <motion.p
@@ -174,7 +174,7 @@ export default function Home() {
               fontSize: "clamp(2.75rem, 15vw, 5.5rem)",
             }}
           >
-            Monisha
+            Gopi
           </motion.h1>
 
           {/* Date */}
@@ -184,7 +184,7 @@ export default function Home() {
             className="mx-auto mt-1 sm:mt-2 text-sm sm:text-lg text-rose-gold-dark font-medium tracking-wide"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            23rd &amp; 24th June 2026
+            2nd &amp; 3rd December 2026
           </motion.p>
 
           {/* Venue */}
@@ -194,7 +194,7 @@ export default function Home() {
             className="mx-auto mt-0.5 sm:mt-1 max-w-[17rem] sm:max-w-none text-xs sm:text-base text-text-medium leading-relaxed"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            KV Conventions, Sanganakal Road, Ballari
+            Virbhai Bhavan, Rajajinagar Industrial Area, Bengaluru
           </motion.p>
 
           {/* Countdown */}
@@ -268,13 +268,13 @@ export default function Home() {
                     fontSize: "clamp(1.4rem, 5.5vw, 2.5rem)",
                   }}
                 >
-                  Chi. Ra. C. Dinesh
+                  Chi. Ra. N. Gopi
                 </h2>
                 <p
                   className="text-[0.65rem] sm:text-sm text-text-medium mt-0.5"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  Son of Smt. Nagamani C. &amp; Shri Chandrashekar A.
+                  Son of Smt. Nagalakshmi  &amp; Late Shri G. Nagabhushana
                 </p>
               </motion.div>
 
@@ -301,13 +301,13 @@ export default function Home() {
                     fontSize: "clamp(1.2rem, 5vw, 2.5rem)",
                   }}
                 >
-                  Chi. Kum. Sou. S. J. Monisha
+                  Chi. Kum. Sou. Y. Jayashree
                 </h2>
                 <p
                   className="text-[0.65rem] sm:text-sm text-text-medium mt-0.5 leading-snug"
                   style={{ fontFamily: "var(--font-body)" }}
                 >
-                  Only daughter of Smt. S. J. Pramodini<br className="sm:hidden" /> &amp; Sri Sura Jagadeesh Shetty
+                  Only daughter of Smt. Y. Manjula <br className="sm:hidden" /> &amp; Sri Y. Adiseshu
                 </p>
               </motion.div>
 
@@ -487,13 +487,13 @@ export default function Home() {
               className="text-lg sm:text-2xl text-rose-gold-dark font-semibold"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              KV Conventions
+              Virbhai Bhavan
             </h3>
             <p
               className="text-xs sm:text-base text-text-medium mt-1 mb-3 sm:mb-5"
               style={{ fontFamily: "var(--font-body)" }}
             >
-              Sanganakal Road, Ballari
+              Rajajinagar Industrial Area, Bengaluru
             </p>
 
             <div
@@ -501,7 +501,8 @@ export default function Home() {
               style={{ border: "1px solid rgba(183,110,121,0.08)" }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15358!2d76.953914!3d15.1638921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb71100575666d1%3A0xf0d6b2636f23a1f9!2sKV%20CONVENTIONS!5e0!3m2!1sen!2sin"
+                src="https://www.google.com/maps/search/?api=1&query=Virbai+Bhavan%2C+2nd+Main+Road%2C+Rajaji+Nagar+Industrial+Town%2C+Rajajinagar%2C+Bengaluru+560010"
+          
                 width="100%"
               className="h-44 sm:h-56 md:h-64"
                 style={{ border: 0 }}
@@ -555,13 +556,13 @@ export default function Home() {
               fontSize: "clamp(1.8rem, 8vw, 3.5rem)",
             }}
           >
-            Dinesh &amp; Monisha
+            Jayashree &amp; Gopi
           </motion.h2>
           <p
             className="text-xs sm:text-base text-text-medium"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            23rd &amp; 24th June 2026 &bull; Ballari
+            2nd &amp; 3rd December 2026 &bull; Bengaluru
           </p>
 
           <OrnamentalDivider className="my-3 sm:my-4" />
@@ -596,7 +597,7 @@ export default function Home() {
             className="mt-5 sm:mt-8 text-[0.55rem] text-text-light"
             style={{ fontFamily: "var(--font-sans)", opacity: 0.6 }}
           >
-            #Disha
+            #GJ
           </p>
         </div>
       </footer>
