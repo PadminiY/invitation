@@ -92,7 +92,7 @@ const events = [
     date: "3rd December 2026",
     day: "Thursday",
     time: "11:55 AM – 12:30 PM",
-    detail: "Karkataka Lagna",
+    detail: "Kumbha Lagna",
     calendarUrl: googleCalendarUrl({
       name: "Muhurtha",
       start: "20260624T091500",
