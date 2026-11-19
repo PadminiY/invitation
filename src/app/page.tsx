@@ -59,8 +59,8 @@ const events = [
     time: "2:00 PM",
     calendarUrl: googleCalendarUrl({
       name: "Varapooja",
-      start: "20260623T163000",
-      end: "20260623T173000",
+      start: "20261202T140000",
+      end: "20261202T150000",
     }),
   },
   {
@@ -70,8 +70,8 @@ const events = [
     time: "7:00 PM",
     calendarUrl: googleCalendarUrl({
       name: "Reception",
-      start: "20260623T190000",
-      end: "20260623T220000",
+      start: "20261202T190000",
+      end: "20261202T220000",
     }),
   },
   {
@@ -82,8 +82,9 @@ const events = [
     
     calendarUrl: googleCalendarUrl({
       name: "Upanayana",
-      start: "20260624T061500",
-      end: "20260624T072000",
+      start: "20261203T080000",
+  end: "20261203T083000",
+
     
     }),
   },
@@ -95,8 +96,8 @@ const events = [
     detail: "Kumbha Lagna",
     calendarUrl: googleCalendarUrl({
       name: "Muhurtha",
-      start: "20260624T091500",
-      end: "20260624T094500",
+       start: "20261203T115500",
+  end: "20261203T123000",
       detail: "Kumbha Lagna",
     }),
   },
@@ -513,7 +514,8 @@ export default function Home() {
             </div>
 
             <motion.a
-              href="https://maps.app.goo.gl/uQGXRXkwMVmsX8Z4A"
+             / href="https://maps.app.goo.gl/uQGXRXkwMVmsX8Z4A"/
+              href= "https://www.google.com/maps/search/?api=1&query=Virbai+Bhavan%2C+2nd+Main+Road%2C+Rajaji+Nagar+Industrial+Town%2C+Rajajinagar%2C+Bengaluru+560010"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
