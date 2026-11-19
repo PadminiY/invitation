@@ -9,11 +9,11 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Dinesh & Monisha | Wedding Invitation",
+  title: "Gopi & Jayashree | Wedding Invitation",
   description:
-    "You are cordially invited to the wedding celebration of Dinesh C & Monisha S J on 24th June 2026 at KV Conventions, Ballari.",
+    "You are cordially invited to the wedding celebration of N. Gopi  & Y. Jayashree on 3rd December 2026 at Virbhai Bhavan, Bengaluru.",
   openGraph: {
-    title: "Dinesh & Monisha | Wedding Invitation",
+    title: "Gopi & Jayashree | Wedding Invitation",
     description:
       "Join us for the wedding celebration of Dinesh C & Monisha S J on 24th June 2026",
     type: "website",
@@ -35,7 +35,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap"
+          href="https://www.google.com/maps/search/?api=1&query=Virbai+Bhavan%2C+2nd+Main+Road%2C+Rajaji+Nagar+Industrial+Town%2C+Rajajinagar%2C+Bengaluru+560010"
           rel="stylesheet"
         />
       </head>
